@@ -31,5 +31,10 @@ namespace WindowsFormsApplication3
             this.tbTextDisplay.Text += "Write " + i.ToString() + "\r\n";
             i++;
         }
+
+        private void btnCLose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

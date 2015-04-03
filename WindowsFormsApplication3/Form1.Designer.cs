@@ -31,12 +31,13 @@
             this.btnWrite = new System.Windows.Forms.Button();
             this.tbTextDisplay = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnCLose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnWrite
             // 
             this.btnWrite.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnWrite.Location = new System.Drawing.Point(28, 23);
+            this.btnWrite.Location = new System.Drawing.Point(96, 23);
             this.btnWrite.Name = "btnWrite";
             this.btnWrite.Size = new System.Drawing.Size(105, 23);
             this.btnWrite.TabIndex = 0;
@@ -53,13 +54,13 @@
             this.tbTextDisplay.Multiline = true;
             this.tbTextDisplay.Name = "tbTextDisplay";
             this.tbTextDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbTextDisplay.Size = new System.Drawing.Size(214, 122);
+            this.tbTextDisplay.Size = new System.Drawing.Size(351, 327);
             this.tbTextDisplay.TabIndex = 1;
             // 
             // btnClear
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnClear.Location = new System.Drawing.Point(139, 23);
+            this.btnClear.Location = new System.Drawing.Point(207, 23);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(103, 23);
             this.btnClear.TabIndex = 2;
@@ -67,11 +68,23 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnCLose
+            // 
+            this.btnCLose.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnCLose.Location = new System.Drawing.Point(172, 402);
+            this.btnCLose.Name = "btnCLose";
+            this.btnCLose.Size = new System.Drawing.Size(75, 23);
+            this.btnCLose.TabIndex = 3;
+            this.btnCLose.Text = "Close";
+            this.btnCLose.UseVisualStyleBackColor = true;
+            this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 230);
+            this.ClientSize = new System.Drawing.Size(407, 435);
+            this.Controls.Add(this.btnCLose);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.tbTextDisplay);
             this.Controls.Add(this.btnWrite);
@@ -87,6 +100,7 @@
         private System.Windows.Forms.Button btnWrite;
         private System.Windows.Forms.TextBox tbTextDisplay;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnCLose;
     }
 }
 
