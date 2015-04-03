@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication3
 {
+
     public partial class Form1 : Form
     {
+        private int i = 1;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.tbTextDisplay.Clear();
+            i = 0;
+        }
+
+        private void btnWrite_Click(object sender, EventArgs e)
+        {
+            this.tbTextDisplay.Text += "Write " + i.ToString() + "\r\n";
+            i++;
         }
     }
 }
